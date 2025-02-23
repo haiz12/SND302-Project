@@ -24,4 +24,6 @@ HE172084.js
 *.sln
 *.sw?
 
-.env
+*.env
+.env.development
+.env.production
