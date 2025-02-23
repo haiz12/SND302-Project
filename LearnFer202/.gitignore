@@ -23,3 +23,5 @@ HE172084.js
 *.njsproj
 *.sln
 *.sw?
+
+.env
