@@ -1,0 +1,234 @@
+[{
+  "_id": {
+    "$oid": "65f91bc44eb0e729fa944986"
+  },
+  "product": {
+    "$oid": "65e583dc74d294b7e9d10387"
+  },
+  "customer": {
+    "$oid": "65e9d4e5dc0b5f3fe2f96c97"
+  },
+  "out_price": 22533,
+  "quantity_real": 90,
+  "quantity_doc": 90,
+  "staff": {
+    "$oid": "65e6d769df85978c2f625033"
+  },
+  "receiver": "Huu Trong",
+  "invoice": "#13",
+  "createdAt": {
+    "$date": "2024-03-19T04:59:48.270Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-31T09:36:56.636Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f91c1b6d1fc39510ed495f"
+  },
+  "product": {
+    "$oid": "65e583dc74d294b7e9d10385"
+  },
+  "customer": {
+    "$oid": "65e9d583dc0b5f3fe2f96c98"
+  },
+  "out_price": 33000,
+  "quantity_real": 30,
+  "quantity_doc": 30,
+  "staff": {
+    "$oid": "65e6d769df85978c2f625033"
+  },
+  "receiver": "hoang",
+  "invoice": "#12",
+  "createdAt": {
+    "$date": "2024-03-19T05:01:15.802Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-21T08:33:07.448Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f92ddd555f2a32dedccd18"
+  },
+  "product": {
+    "$oid": "65e583dc74d294b7e9d10385"
+  },
+  "customer": {
+    "$oid": "65e9d4e5dc0b5f3fe2f96c97"
+  },
+  "out_price": 49000,
+  "quantity_real": 100,
+  "quantity_doc": 100,
+  "staff": {
+    "$oid": "65e6d769df85978c2f625033"
+  },
+  "receiver": "bao",
+  "invoice": "#22",
+  "createdAt": {
+    "$date": "2024-03-19T06:17:01.738Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-21T08:33:17.239Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fb21b6effe282b08693440"
+  },
+  "product": {
+    "$oid": "65e583dc74d294b7e9d10387"
+  },
+  "customer": {
+    "$oid": "65e9d648dc0b5f3fe2f96c9b"
+  },
+  "out_price": 20000,
+  "quantity_real": 90,
+  "quantity_doc": 100,
+  "staff": {
+    "$oid": "65e6d769df85978c2f625033"
+  },
+  "receiver": "ngo minh toan",
+  "invoice": "#122",
+  "createdAt": {
+    "$date": "2024-03-20T17:49:42.610Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-21T08:33:27.616Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fba1a662721392504e709f"
+  },
+  "product": {
+    "$oid": "65e583dc74d294b7e9d10386"
+  },
+  "customer": {
+    "$oid": "65e9d583dc0b5f3fe2f96c98"
+  },
+  "out_price": 24000,
+  "quantity_real": 100,
+  "quantity_doc": 100,
+  "staff": {
+    "$oid": "65e6d769df85978c2f625033"
+  },
+  "receiver": "ngo minh toan",
+  "invoice": "#100",
+  "createdAt": {
+    "$date": "2024-03-21T02:55:34.312Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-21T08:33:57.283Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fbc64eb84c5f3065602a97"
+  },
+  "product": {
+    "$oid": "65e583dc74d294b7e9d10385"
+  },
+  "customer": {
+    "$oid": "65e9d583dc0b5f3fe2f96c98"
+  },
+  "out_price": 38000,
+  "quantity_real": 250,
+  "quantity_doc": 256,
+  "staff": {
+    "$oid": "65e6d769df85978c2f625033"
+  },
+  "receiver": "ngo minh toan",
+  "invoice": "#09",
+  "createdAt": {
+    "$date": "2024-03-21T05:31:58.728Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-21T08:34:15.672Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fbff0cb84c5f306560358c"
+  },
+  "product": {
+    "$oid": "65e583dc74d294b7e9d10386"
+  },
+  "customer": {
+    "$oid": "65e9d6dddc0b5f3fe2f96c9d"
+  },
+  "out_price": 48000,
+  "quantity_real": 10000,
+  "quantity_doc": 10000,
+  "staff": {
+    "$oid": "65e6d55fdf85978c2f625030"
+  },
+  "receiver": "ngo minh toan",
+  "invoice": "#123456",
+  "createdAt": {
+    "$date": "2024-03-21T09:34:04.304Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-21T09:34:04.304Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fbff8eb84c5f30656035cb"
+  },
+  "product": {
+    "$oid": "65e583dc74d294b7e9d10386"
+  },
+  "customer": {
+    "$oid": "65e9d648dc0b5f3fe2f96c9b"
+  },
+  "out_price": 48000,
+  "quantity_real": 2000,
+  "quantity_doc": 3000,
+  "staff": {
+    "$oid": "65e6d55fdf85978c2f625030"
+  },
+  "receiver": "ngo minh toan",
+  "invoice": "#12134",
+  "createdAt": {
+    "$date": "2024-03-21T09:36:14.918Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-15T13:16:05.995Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e6eef9d677f543c60af804"
+  },
+  "product": {
+    "$oid": "65e583dc74d294b7e9d10385"
+  },
+  "customer": {
+    "$oid": "65e9d497dc0b5f3fe2f96c96"
+  },
+  "out_price": 2000,
+  "quantity_real": 2000,
+  "quantity_doc": 2000,
+  "staff": {
+    "$oid": "65e6d769df85978c2f625033"
+  },
+  "receiver": "ngo minh toan123",
+  "invoice": "#2222",
+  "createdAt": {
+    "$date": "2024-09-15T14:28:09.030Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-15T14:28:09.030Z"
+  },
+  "__v": 0
+}]

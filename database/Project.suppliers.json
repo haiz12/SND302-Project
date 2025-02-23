@@ -1,0 +1,408 @@
+[{
+  "_id": {
+    "$oid": "65e57949c868c30bccee017b"
+  },
+  "code": "PDPE101",
+  "name": "công ty phân phối nhựa panda",
+  "logo": [
+    {
+      "url": "data:image/png;base64,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",
+      "caption": "logo con gau",
+      "_id": {
+        "$oid": "65e57949c868c30bccee017c"
+      },
+      "createdAt": {
+        "$date": "2024-03-04T07:33:29.526Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-04T07:33:29.526Z"
+      }
+    }
+  ],
+  "description": "Cong ty chuyen cung cap va phan phoi ong nhua toan vietnam",
+  "phone": "0912345678",
+  "address": "12, KCN Hoa Lac, Thach That, Ha Noi",
+  "email": "nhuapanda@gmail.com",
+  "website": "https://panda.com",
+  "createdAt": {
+    "$date": "2024-03-04T07:33:29.528Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-04T07:33:29.528Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5798ac868c30bccee017e"
+  },
+  "code": "PDPE102",
+  "name": "công ty phân phối nhựa panda co so 2",
+  "logo": [
+    {
+      "url": "data:image/png;base64,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",
+      "caption": "logo con gau",
+      "_id": {
+        "$oid": "65e5798ac868c30bccee017f"
+      },
+      "createdAt": {
+        "$date": "2024-03-04T07:34:34.707Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-04T07:34:34.707Z"
+      }
+    }
+  ],
+  "description": "Cong ty chuyen cung cap va phan phoi ong nhua toan vietnam",
+  "phone": "0912345456",
+  "address": "12, KCN Panda, Q10, Ho Chi Minh",
+  "email": "nhuapanda2@gmail.com",
+  "website": "https://panda.com",
+  "createdAt": {
+    "$date": "2024-03-04T07:34:34.707Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-04T07:34:34.707Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e92ac0d98b78f8f3f2a06c"
+  },
+  "code": "NNSG102",
+  "name": "Công ty Nhựa Sài Gòn",
+  "logo": [
+    {
+      "url": "https://cc-prod.scene7.com/is/image/CCProdAuthor/mascot-logo-design_P1_900x420?$pjpeg$&jpegSize=200&wid=900",
+      "caption": "Main logo",
+      "_id": {
+        "$oid": "65e92ac0d98b78f8f3f2a06d"
+      },
+      "createdAt": {
+        "$date": "2024-03-07T02:47:28.075Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-07T02:47:28.075Z"
+      }
+    }
+  ],
+  "description": "Chuyên cung cấp và sản xuất sản phẩm từ nhựa cao cấp.",
+  "phone": "0987654321",
+  "address": "25 Nguyễn Văn Linh, Quận 7, TP. Hồ Chí Minh",
+  "email": "info@nhuasaigon.com",
+  "website": "https://www.saigonplastic.com.vn/",
+  "createdAt": {
+    "$date": "2024-03-07T02:47:28.075Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-07T02:47:28.075Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e92c65d98b78f8f3f2a06f"
+  },
+  "code": "NDPC103",
+  "name": "Công ty Nhựa Đại Phát",
+  "logo": [
+    {
+      "url": "http://daiphatnhua.com/upload/hinhanh/thiet-ke-chua-co-ten-22-4969.png",
+      "caption": "Main logo",
+      "_id": {
+        "$oid": "65e92c65d98b78f8f3f2a070"
+      },
+      "createdAt": {
+        "$date": "2024-03-07T02:54:29.358Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-07T02:54:29.358Z"
+      }
+    }
+  ],
+  "description": "Chuyên nhập khẩu và phân phối nhựa công nghiệp từ các nước tiên tiến.",
+  "phone": "0976543210",
+  "address": "68 Trần Hưng Đạo, Quận 1, TP. Hồ Chí Minh",
+  "email": "contact@dphatplastic.com",
+  "website": "http://daiphatnhua.com/",
+  "createdAt": {
+    "$date": "2024-03-07T02:54:29.358Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-07T02:54:29.358Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e92cd9d98b78f8f3f2a072"
+  },
+  "code": "NTBD104",
+  "name": "Công ty TNHH Nhựa Bình Dương",
+  "logo": [
+    {
+      "url": "https://www.yellowpages.vn/images/yellowpages-logo2.png",
+      "caption": "Main logo",
+      "_id": {
+        "$oid": "65e92cd9d98b78f8f3f2a073"
+      },
+      "createdAt": {
+        "$date": "2024-03-07T02:56:25.142Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-07T02:56:25.142Z"
+      }
+    }
+  ],
+  "description": "Sản xuất và cung cấp các sản phẩm nhựa dùng trong công nghiệp và gia dụng.",
+  "phone": "0918765432",
+  "address": "Lô A, KCN Sóng Thần, Dĩ An, Bình Dương",
+  "email": "info@binhduongplastic.vn",
+  "website": "https://www.yellowpages.vn/lgs/1090944/cong-ty-tnhh-nhua-binh-duong.html",
+  "createdAt": {
+    "$date": "2024-03-07T02:56:25.142Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-07T02:56:25.142Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e92d25d98b78f8f3f2a075"
+  },
+  "code": "NBL105",
+  "name": "Công ty Cổ phần Nhựa Bảo Long",
+  "logo": [
+    {
+      "url": "https://vinachemical.com/images/logo.png",
+      "caption": "Main logo",
+      "_id": {
+        "$oid": "65e92d25d98b78f8f3f2a076"
+      },
+      "createdAt": {
+        "$date": "2024-03-07T02:57:41.053Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-07T02:57:41.053Z"
+      }
+    }
+  ],
+  "description": "Chuyên sản xuất và cung cấp các sản phẩm nhựa chất lượng cao.",
+  "phone": "0909876543",
+  "address": "Khu công nghiệp Long Thành, Đồng Nai",
+  "email": "contact@baolongplastics.com",
+  "website": "https://vinachemical.com/company_detail.php?item=20150720132606447",
+  "createdAt": {
+    "$date": "2024-03-07T02:57:41.054Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-07T02:57:41.054Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e92d96d98b78f8f3f2a078"
+  },
+  "code": "NPT106",
+  "name": "Công ty Nhựa Phú Thọ",
+  "logo": [
+    {
+      "url": "https://vinachemical.com/images/logo.png",
+      "caption": "Main logo",
+      "_id": {
+        "$oid": "65e92d96d98b78f8f3f2a079"
+      },
+      "createdAt": {
+        "$date": "2024-03-07T02:59:34.767Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-07T02:59:34.767Z"
+      }
+    }
+  ],
+  "description": "Sản xuất và cung cấp nhựa chất lượng cao phục vụ cho nhiều lĩnh vực khác nhau.",
+  "phone": "0898765432",
+  "address": "15 Lê Lợi, TP. Việt Trì, Phú Thọ",
+  "email": "sales@phuthoplastics.com",
+  "website": "https://www.yellowpages.vn/class/186060/c%C3%B4ng-ty-s%E1%BA%A3n-xu%E1%BA%A5t-nh%E1%BB%B1a-%E1%BB%9F_ph%C3%BA-th%E1%BB%8D.html",
+  "createdAt": {
+    "$date": "2024-03-07T02:59:34.768Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-07T02:59:34.768Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e92de1d98b78f8f3f2a07b"
+  },
+  "code": "NTMT107",
+  "name": "Công ty TNHH Nhựa Minh Thành",
+  "logo": [
+    {
+      "url": "http://minhthanhplastic.vn/upload/hinhanh/26681_logo_vi.jpg",
+      "caption": "Main logo",
+      "_id": {
+        "$oid": "65e92de1d98b78f8f3f2a07c"
+      },
+      "createdAt": {
+        "$date": "2024-03-07T03:00:49.056Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-07T03:00:49.056Z"
+      }
+    }
+  ],
+  "description": "Chuyên sản xuất và cung cấp các sản phẩm nhựa gia dụng và công nghiệp.",
+  "phone": "0887654321",
+  "address": "KCN Tân Phú Trung, Củ Chi, TP. Hồ Chí Minh",
+  "email": "info@minhthanhplastics.vn",
+  "website": "http://minhthanhplastic.vn/",
+  "createdAt": {
+    "$date": "2024-03-07T03:00:49.056Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-07T03:00:49.056Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e92e11d98b78f8f3f2a07e"
+  },
+  "code": "NSXHN108",
+  "name": "Công ty TNHH Sản xuất Nhựa Hà Nội",
+  "logo": [
+    {
+      "url": "https://www.hanoiplastics.com.vn/wp-content/uploads/2023/07/logo.svg",
+      "caption": "Main logo",
+      "_id": {
+        "$oid": "65e92e11d98b78f8f3f2a07f"
+      },
+      "createdAt": {
+        "$date": "2024-03-07T03:01:37.328Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-07T03:01:37.328Z"
+      }
+    }
+  ],
+  "description": "Sản xuất và cung cấp nhựa chất lượng cao cho thị trường trong và ngoài nước.",
+  "phone": "0876543210",
+  "address": "KCN Quang Minh, Mê Linh, Hà Nội",
+  "email": "contact@hnplastics.com",
+  "website": "https://www.hanoiplastics.com.vn/",
+  "createdAt": {
+    "$date": "2024-03-07T03:01:37.328Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-07T03:01:37.328Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e92e63d98b78f8f3f2a081"
+  },
+  "code": "NVL109",
+  "name": "Công ty TNHH Nhựa Việt Long",
+  "logo": [
+    {
+      "url": "https://www.vietlong-plastic.com/wp-content/uploads/2019/06/z1429191650538_9ab9590b652046db4af17bf87ee28e75.jpg",
+      "caption": "Main logo",
+      "_id": {
+        "$oid": "65e92e63d98b78f8f3f2a082"
+      },
+      "createdAt": {
+        "$date": "2024-03-07T03:02:59.200Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-07T03:02:59.200Z"
+      }
+    }
+  ],
+  "description": "Sản xuất và cung cấp các sản phẩm nhựa đa dạng cho nhiều mục đích sử dụng.",
+  "phone": "0865432109",
+  "address": "Lô 6, KCN Nam Thăng Long, Hà Nội",
+  "email": "info@vietlongplastics.com",
+  "website": "https://www.vietlong-plastic.com/",
+  "createdAt": {
+    "$date": "2024-03-07T03:02:59.200Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-07T03:02:59.200Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e92e9ed98b78f8f3f2a084"
+  },
+  "code": "NDD110",
+  "name": "Công ty TNHH Nhựa Đại Đô",
+  "logo": [
+    {
+      "url": "http://daidofurniture.com/upload/hinhanh/1111111untitled-5-4498_116x44.992647058824.png",
+      "caption": "Main logo",
+      "_id": {
+        "$oid": "65e92e9ed98b78f8f3f2a085"
+      },
+      "createdAt": {
+        "$date": "2024-03-07T03:03:58.182Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-07T03:03:58.182Z"
+      }
+    }
+  ],
+  "description": "Chuyên sản xuất và phân phối các sản phẩm nhựa chất lượng cao.",
+  "phone": "0854321098",
+  "address": "KCN Bắc Thăng Long, Đông Anh, Hà Nội",
+  "email": "sales@daidoplastics.com",
+  "website": "http://daidofurniture.com/gioi-thieu",
+  "createdAt": {
+    "$date": "2024-03-07T03:03:58.182Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-07T03:03:58.182Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e92ecfd98b78f8f3f2a087"
+  },
+  "code": "NSXDT111",
+  "name": "Công ty TNHH Sản xuất Nhựa Đại Tài",
+  "logo": [
+    {
+      "url": "https://www.hanoiplastics.com.vn/wp-content/uploads/2023/07/logo.svg",
+      "caption": "Main logo",
+      "_id": {
+        "$oid": "65e92ecfd98b78f8f3f2a088"
+      },
+      "createdAt": {
+        "$date": "2024-03-07T03:04:47.853Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-07T03:04:47.853Z"
+      }
+    }
+  ],
+  "description": "Sản xuất và cung cấp các sản phẩm nhựa đa dạng cho nhiều ngành công nghiệp.",
+  "phone": "0843210987",
+  "address": "KCN Bình Phước, Thủ Dầu Một, Bình Dương",
+  "email": "info@daitaiplastics.com",
+  "website": "https://www.yellowpages.vn/lgs/1094034/cate",
+  "createdAt": {
+    "$date": "2024-03-07T03:04:47.854Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-07T03:04:47.854Z"
+  },
+  "__v": 0
+}]

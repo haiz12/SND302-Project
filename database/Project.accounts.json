@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "65e6d55fdf85978c2f625030"
+  },
+  "username": "DongLTT",
+  "email": "dongltt@gmmail.com",
+  "password": "123456678",
+  "dob": {
+    "$date": "2024-03-04T08:18:36.976Z"
+  },
+  "gender": "Male",
+  "phoneNumber": "0911385097",
+  "avatar": "dong.jpg",
+  "role_id": "1"
+},
+{
+  "_id": {
+    "$oid": "65e6d6c0df85978c2f625031"
+  },
+  "username": "TrongNH",
+  "email": "trongnh@gmmail.com",
+  "password": "123456678",
+  "dob": {
+    "$date": "2024-03-03T08:18:36.976Z"
+  },
+  "gender": "Male",
+  "phoneNumber": "0911283091",
+  "avatar": "trong.jpg",
+  "role_id": "1"
+},
+{
+  "_id": {
+    "$oid": "65e6d769df85978c2f625033"
+  },
+  "username": "ToanNM",
+  "email": "toannm@gmmail.com",
+  "password": "toanngo28",
+  "dob": {
+    "$date": "2002-12-28T00:00:00.000Z"
+  },
+  "gender": "Male",
+  "phoneNumber": "0123456789",
+  "avatar": "toan.jpg",
+  "role_id": "1"
+},
+{
+  "_id": {
+    "$oid": "65e6d7ccdf85978c2f625034"
+  },
+  "username": "BaoPG",
+  "email": "baopg@gmmail.com",
+  "password": "123456678",
+  "dob": {
+    "$date": "2024-03-04T08:18:36.976Z"
+  },
+  "gender": "Male",
+  "phoneNumber": "0234567797",
+  "avatar": "bao.jpg",
+  "role_id": "2"
+},
+{
+  "_id": {
+    "$oid": "65e6d834df85978c2f625036"
+  },
+  "username": "FanMU",
+  "email": "manchester@gmmail.com",
+  "password": "123456678",
+  "dob": {
+    "$date": "2024-03-04T08:18:36.976Z"
+  },
+  "gender": "Female",
+  "phoneNumber": "0214567797",
+  "avatar": "a.jpg",
+  "role_id": "3"
+},
+{
+  "_id": {
+    "$oid": "65e6d864df85978c2f625037"
+  },
+  "username": "Out-staff",
+  "email": "fc@gmmail.com",
+  "password": "123456678",
+  "dob": {
+    "$date": "2024-03-04T08:18:36.976Z"
+  },
+  "gender": "Female",
+  "phoneNumber": "0234897797",
+  "avatar": "b.jpg",
+  "role_id": "3"
+},
+{
+  "_id": {
+    "$oid": "65e6d890df85978c2f625038"
+  },
+  "username": "Out_staff2",
+  "email": "fc2@gmmail.com",
+  "password": "123456678",
+  "dob": {
+    "$date": "2024-09-04T08:18:36.976Z"
+  },
+  "gender": "Female",
+  "phoneNumber": "091567797",
+  "avatar": "c.jpg",
+  "role_id": "3"
+},
+{
+  "_id": {
+    "$oid": "6715209d57b2a066da4ecaa5"
+  },
+  "username": "VietDQ",
+  "email": "quocviet27403@gmail.com",
+  "password": "Yolo27403",
+  "dob": {
+    "$date": "1970-01-11T13:09:45.097Z"
+  },
+  "gender": "2024-10-22T17:00:00.000Z",
+  "phoneNumber": "female",
+  "role_id": "1",
+  "createdAt": {
+    "$date": "2024-10-20T15:24:13.723Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-20T15:24:13.723Z"
+  },
+  "__v": 0
+}]

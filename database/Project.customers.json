@@ -1,0 +1,101 @@
+[{
+  "_id": {
+    "$oid": "65e9d428dc0b5f3fe2f96c95"
+  },
+  "name": "Đặng Quốc Việt",
+  "phone": "0378470382",
+  "address": "Nam Định",
+  "email": "bao@gmail.com",
+  "updatedAt": {
+    "$date": "2024-10-18T08:16:45.536Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e9d497dc0b5f3fe2f96c96"
+  },
+  "email": "toan@gmail.com",
+  "name": "Nguyen Van Toan",
+  "phone": "0234569871",
+  "address": "Nghe An"
+},
+{
+  "_id": {
+    "$oid": "65e9d4e5dc0b5f3fe2f96c97"
+  },
+  "email": "trong@gmail.com",
+  "name": "Nguyen Huu Trong",
+  "phone": "0987654321",
+  "address": "Hai Phong"
+},
+{
+  "_id": {
+    "$oid": "65e9d583dc0b5f3fe2f96c98"
+  },
+  "address": "Nghe An",
+  "email": "giabao@gmail.com",
+  "name": "Phan Gia Bao",
+  "phone": "0876594123"
+},
+{
+  "_id": {
+    "$oid": "65e9d611dc0b5f3fe2f96c9a"
+  },
+  "address": "Hai Phong",
+  "email": "hung@gmail.com",
+  "name": "Nguyen Phi Hung",
+  "phone": "0865791234"
+},
+{
+  "_id": {
+    "$oid": "65e9d648dc0b5f3fe2f96c9b"
+  },
+  "address": "Thai Binh",
+  "email": "lan@gmail.com",
+  "name": "Tran Thi Lan",
+  "phone": "0341257896"
+},
+{
+  "_id": {
+    "$oid": "65e9d694dc0b5f3fe2f96c9c"
+  },
+  "address": "Ha Noi",
+  "email": "bich@gmail.com",
+  "name": "Duong Thi Ngoc Bich",
+  "phone": "0983274156"
+},
+{
+  "_id": {
+    "$oid": "65e9d6dddc0b5f3fe2f96c9d"
+  },
+  "address": "Thai Binh",
+  "email": "thinh@gmail.com",
+  "name": "Doan Duc Thinh",
+  "phone": "0867954123"
+},
+{
+  "_id": {
+    "$oid": "65e9d713dc0b5f3fe2f96c9e"
+  },
+  "address": "Thai Binh",
+  "email": "duong@gmail.com",
+  "name": "Dang Minh Duong",
+  "phone": "0987654312"
+},
+{
+  "_id": {
+    "$oid": "6711539bdc57e2d054545b5c"
+  },
+  "name": "Đặng Việt",
+  "phone": "0378470382",
+  "email": "quocviet27403@gmail.com",
+  "address": "Hà Nội",
+  "logo": [],
+  "createdAt": {
+    "$date": "2024-10-17T18:12:43.815Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-17T18:12:43.815Z"
+  },
+  "__v": 0
+}]
