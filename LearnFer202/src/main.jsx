@@ -19,6 +19,7 @@ import ImportProductExcelPage from "./components/product/product.import.jsx";
 import ImportSupllierExcelPage from "./components/supllier/supllier.import.jsx";
 import ImportInOrderExcelPage from "./components/in-order/import.inorder.jsx";
 import ImportOutOrderExcelPage from "./components/out-order/out-order-import.jsx";
+import RegisterPage from "./components/register/register.jsx";
 
 const router = createBrowserRouter([
 
@@ -92,6 +93,10 @@ const router = createBrowserRouter([
       
     ],
   },
+  {
+    path: "register",
+    element: <RegisterPage />,
+  }
 
 ]);
 
