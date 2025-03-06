@@ -23,3 +23,7 @@ HE172084.js
 *.njsproj
 *.sln
 *.sw?
+
+*.env
+.env.development
+.env.production
