@@ -1,5 +1,5 @@
 import { AccountRepo } from "../services/index.js";
-import jwt from 'jsonwebtoken';
+import jwt from "jsonwebtoken";
 import {
   signAccessToken,
   signRefreshToken,
@@ -134,7 +134,6 @@ const logoutAccount = async (req, res, next) => {
   }
 };
 
-
 const getUserInfo = async (req, res, next) => {
   try {
     const token = req.headers.authorization?.split(" ")[1];
@@ -158,6 +157,89 @@ const getUserInfo = async (req, res, next) => {
   }
 };
 
+//------------------------------------------------
+// send OTP khi quên mật khẩu
+import User from "../models/account.js";
+import { sendOTP } from "../utils/nodemailer.js";
+import bcrypt from "bcrypt"
+const forgotPassword = async (req, res) => {
+  const { email } = req.body;
+  // kiểm tra email có tồn tại trong database
+  const user = await User.findOne({ email });
+  if (!user) {
+    return res.status(404).json({ message: "Email not exist!!" });
+  }
+  // tạo otp ngẫu nhiên
+  const otp = Math.floor(100000 + Math.random() * 900000);
+  // Lưu OTP vào cơ sở dữ liệu với thời gian hết hạn (ví dụ: 10 phút)
+  const otpExpiration = new Date();
+  otpExpiration.setMinutes(otpExpiration.getMinutes() + 10); // OTP hết hạn sau 10 phút
+
+  user.otp = otp;
+  user.otpExpired = otpExpiration;
+  await user.save();
+
+  // gửi otp đến email người dùng
+  await sendOTP(email, otp);
+
+  res
+    .status(200)
+    .json({ message: "OTP send your email . Check email please " });
+};
+
+// VerifyOTP
+const verifyOTP = async (req, res) => {
+  try {
+    const { email, otp } = req.body;
+    // Kiểm tra email tồn tại không
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(400).json({ message: "Email không tồn tại" });
+    }
+    if (user.otp != otp) {
+      return res.status(400).json({ message: "OTP không đúng" });
+    }
+    // Kiểm tra xem OTP có hết hạn không
+    if (new Date() > user.otpExpired) {
+      return res.status(400).json({ message: "Mã OTP đã hết hạn" });
+    }
+    res
+      .status(200)
+      .json({ message: "OTP hợp lệ, bạn có thể thay đổi mật khẩu" });
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+};
+
+const resetPassword = async (req, res) => {
+  const { email, otp, newPassword } = req.body;
+
+  // Kiểm tra OTP
+  const user = await User.findOne({ email });
+  if (!user) {
+    return res.status(404).json({ message: "Email không tồn tại" });
+  }
+
+  // Kiểm tra xem OTP có khớp không
+  if (user.otp !== otp) {
+    return res.status(400).json({ message: "Mã OTP không đúng" });
+  }
+
+  // Kiểm tra xem OTP có hết hạn không
+  if (new Date() > user.otpExpired) {
+    return res.status(400).json({ message: "Mã OTP đã hết hạn" });
+  }
+
+  
+  // Cập nhật mật khẩu mới
+  user.password = newPassword;
+  user.otp = undefined;
+  user.otpExpired = undefined;
+  await user.save();
+
+  res.status(200).json({ message: "Mật khẩu đã được thay đổi thành công" });
+};
+
 
 export default {
   getAccount,
@@ -168,4 +250,7 @@ export default {
   loginAccount,
   logoutAccount,
   getUserInfo,
+  forgotPassword,
+  verifyOTP,
+  resetPassword
 };

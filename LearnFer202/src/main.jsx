@@ -19,19 +19,20 @@ import ImportProductExcelPage from "./components/product/product.import.jsx";
 import ImportSupllierExcelPage from "./components/supllier/supllier.import.jsx";
 import ImportInOrderExcelPage from "./components/in-order/import.inorder.jsx";
 import ImportOutOrderExcelPage from "./components/out-order/out-order-import.jsx";
-
+import ForgotPassword from "./components/forgotpassword/forgotpassword.jsx";
 const router = createBrowserRouter([
-
-
   {
     path: "/login",
     element: <Login />,
     errorElement: <ErrorPage />,
   },
   {
+    path: "/forgot-password",
+    element: <ForgotPassword />,
+  },
+  {
     path: "/",
-    element:
-      <App />,
+    element: <App />,
     children: [
       {
         index: true,
@@ -63,7 +64,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/addout-orders",
-        element: <AddOutOrder/>,
+        element: <AddOutOrder />,
       },
       {
         path: "/in-orders",
@@ -89,10 +90,8 @@ const router = createBrowserRouter([
         path: "/import-out-order",
         element: <ImportOutOrderExcelPage />,
       },
-      
     ],
   },
-
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
