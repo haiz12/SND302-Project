@@ -140,7 +140,7 @@ const UpdateAccountModal = (props) => {
                     name="role_id"
                     rules={[{ required: true, message: "Please select the role!" }]}
                 >
-                    <Select>
+                    <Select disabled>
                         <Select.Option value="1">Quản lý</Select.Option>
                         <Select.Option value="2">Nhân viên nhập hàng</Select.Option>
                         <Select.Option value="3">Nhân viên xuất hàng</Select.Option>

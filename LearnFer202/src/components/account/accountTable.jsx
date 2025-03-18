@@ -1,36 +1,42 @@
-import { notification, Popconfirm, Table } from 'antd';
-import moment from 'moment';
+import { notification, Popconfirm, Table } from "antd";
+import moment from "moment";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
-import { deleteAccountAPI } from './account.api';
-import { useState } from 'react';
-import UpdateAccountModal from './account.update';
+import { deleteAccountAPI } from "./account.api";
+import { useState } from "react";
+import UpdateAccountModal from "./account.update";
 
-const AccountTable = (props) => {
+const AccountTable = ({
+  dataAccounts,
+  loadAccount,
+  current,
+  pageSize,
+  total,
+  setCurrent,
+  setPageSize,
+}) => {
   const [isModalUpdateOpen, setIsModalUpdateOpen] = useState(false);
   const [dataUpdate, setDataUpdate] = useState({});
   const [visiblePasswordId, setVisiblePasswordId] = useState(null);
-  
-  const {
-    dataAccounts,
-    loadAccount,
-    current,
-    pageSize,
-    total,
-    setCurrent,
-    setPageSize,
-  } = props;
 
-  const handleDeleteUser = async (id) => {
+  const handleDeleteUser = async (id, role_id) => {
+    if (role_id === "1") {
+      notification.warning({
+        message: "Không thể xóa",
+        description: "Bạn không thể xóa tài khoản Quản lý!",
+      });
+      return;
+    }
+
     const res = await deleteAccountAPI(id);
     if (res.data) {
       notification.success({
-        message: "Delete user",
-        description: "Xóa user thành công",
+        message: "Xóa tài khoản",
+        description: "Xóa tài khoản thành công!",
       });
       await loadAccount();
     } else {
       notification.error({
-        message: "Error delete user",
+        message: "Lỗi khi xóa",
         description: JSON.stringify(res.message),
       });
     }
@@ -39,66 +45,61 @@ const AccountTable = (props) => {
   const columns = [
     {
       title: "STT",
-      render: (_, record, index) => {
-        return <>{index + 1}</>;
-      },
+      render: (_, record, index) => <>{index + 1}</>,
     },
     {
-      title: 'Name',
-      dataIndex: 'username',
-      key: 'username',
-      render: (text) => <a>{text}</a>,
+      title: "Tên đăng nhập",
+      dataIndex: "username",
+      key: "username",
     },
     {
-      title: 'Email',
-      dataIndex: 'email',
-      key: 'email',
+      title: "Email",
+      dataIndex: "email",
+      key: "email",
     },
     {
-      title: 'Mật Khẩu',
-      dataIndex: 'password',
-      key: 'password',
+      title: "Mật khẩu",
+      dataIndex: "password",
+      key: "password",
       render: (text, record) => (
         <span
-          onClick={() => setVisiblePasswordId(visiblePasswordId === record._id ? null : record._id)}
-          style={{ cursor: 'pointer' }}
+          onClick={() =>
+            setVisiblePasswordId(
+              visiblePasswordId === record._id ? null : record._id
+            )
+          }
+          style={{ cursor: "pointer" }}
         >
-          {visiblePasswordId === record._id ? text : '••••••••'}
+          {visiblePasswordId === record._id ? text : "••••••••"}
         </span>
       ),
     },
     {
-      title: 'Ngày sinh',
-      dataIndex: 'dob',
-      key: 'dob',
-      render: (dob) => {
-        return moment(dob).format('DD/MM/YYYY');
-      },
+      title: "Ngày sinh",
+      dataIndex: "dob",
+      key: "dob",
+      render: (dob) => moment(dob).format("DD/MM/YYYY"),
     },
     {
-      title: 'Giới tính',
-      dataIndex: 'gender',
-      key: 'gender',
-      render: (gender) => {
-        switch (gender) {
-          case "Male":
-            return "Nam";
-          case "Female":
-            return "Nữ";
-          default:
-            return "Không xác định";
-        }
-      }
+      title: "Giới tính",
+      dataIndex: "gender",
+      key: "gender",
+      render: (gender) =>
+        gender === "Male"
+          ? "Nam"
+          : gender === "Female"
+          ? "Nữ"
+          : "Không xác định",
     },
     {
-      title: 'Số điện thoại',
-      dataIndex: 'phoneNumber',
-      key: 'phoneNumber',
+      title: "Số điện thoại",
+      dataIndex: "phoneNumber",
+      key: "phoneNumber",
     },
     {
-      title: 'Role',
-      dataIndex: 'role_id',
-      key: 'role_id',
+      title: "Vai trò",
+      dataIndex: "role_id",
+      key: "role_id",
       render: (role_id) => {
         switch (role_id) {
           case "1":
@@ -113,20 +114,21 @@ const AccountTable = (props) => {
       },
     },
     {
-      title: 'Action',
-      key: 'action',
+      title: "Hành động",
+      key: "action",
       render: (_, record) => (
-        <div style={{ display: "flex", gap: "30px" }}>
+        <div style={{ display: "flex", gap: "15px" }}>
           <EditOutlined
             onClick={() => {
               setDataUpdate(record);
               setIsModalUpdateOpen(true);
             }}
+            style={{ cursor: "pointer", color: "blue" }}
           />
           <Popconfirm
             title="Xóa tài khoản"
-            description="Bạn chắc chắn xóa tài khoản này ?"
-            onConfirm={() => handleDeleteUser(record._id)}
+            description="Bạn chắc chắn muốn xóa tài khoản này?"
+            onConfirm={() => handleDeleteUser(record._id, record.role_id)}
             okText="Yes"
             cancelText="No"
             placement="left"
@@ -138,25 +140,6 @@ const AccountTable = (props) => {
     },
   ];
 
-  const onChange = (pagination, filters, sorter, extra) => {
-    // setCurrent, setPageSize
-    //nếu thay đổi trang : current
-    console.log("pagination", { pagination, filters, sorter, extra });
-    
-    if (pagination && pagination.current) {
-      if (+pagination.current !== +current) {
-        setCurrent(+pagination.current); //"5" => 5
-      }
-    }
-
-    //nếu thay đổi tổng số phần tử : pageSize
-    if (pagination && pagination.pageSize) {
-      if (+pagination.pageSize !== +pageSize) {
-        setPageSize(+pagination.pageSize); //"5" => 5
-      }
-    }
-  };
-
   return (
     <>
       <Table
@@ -164,20 +147,18 @@ const AccountTable = (props) => {
         columns={columns}
         dataSource={dataAccounts}
         pagination={{
-          current: current,
-          pageSize: pageSize,
+          current,
+          pageSize,
           showSizeChanger: true,
-          total: total,
-          showTotal: (total, range) => {
-            return (
-              <div>
-                {" "}
-                {range[0]}-{range[1]} trên {total} rows
-              </div>
-            );
-          },
+          total,
+          showTotal: (total, range) =>
+            `${range[0]}-${range[1]} trên ${total} tài khoản`,
         }}
-        onChange={onChange}
+        onChange={(pagination) => {
+          if (pagination.current !== current) setCurrent(pagination.current);
+          if (pagination.pageSize !== pageSize)
+            setPageSize(pagination.pageSize);
+        }}
       />
       <UpdateAccountModal
         isModalUpdateOpen={isModalUpdateOpen}
@@ -188,6 +169,6 @@ const AccountTable = (props) => {
       />
     </>
   );
-}
+};
 
 export default AccountTable;
